@@ -1,0 +1,39 @@
+.doct-intro-container {
+  padding: 40px 20px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.doct-intro-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2b6c3f;
+  margin-bottom: 15px;
+}
+
+.doct-intro-text {
+  font-size: 16px;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.doct-intro-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 25px;
+  justify-items: center;
+}
+
+@media (max-width: 1024px) {
+  .doct-intro-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .doct-intro-list {
+    grid-template-columns: 1fr;
+  }
+}

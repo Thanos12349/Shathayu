@@ -1,0 +1,22 @@
+import React from 'react'
+import Header from '../components/Header';
+import AboutHeroSection from '../components/AboutHeroSection'
+import FacilitiesInsur from '../components/FacilitiesInsur'
+import HolisticContactForm from '../components/HolisticContactForm';
+import Footer from '../Components/Footer'
+
+const Insur = () => {
+  return (
+    <>
+      <Header />
+      <AboutHeroSection videoSrc="" title="Avail Health Insurance Coverage" />
+      <FacilitiesInsur />
+      <HolisticContactForm />
+    
+      <Footer />
+    </>
+  )
+}
+
+export default Insur
+
