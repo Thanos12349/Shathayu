@@ -5,7 +5,7 @@ import AccommodationOptions from '../components/AccommodationOptions'
 import PackagePrice from '../components/PackagePrice'
 import Facilities from '../components/Facilities'
 import StayGallery from '../components/StayGallery'
-import Footer from '../Components/Footer'
+import Footer from '../components/Footer'
 
 const Stay = () => {
   return (
