@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import AboutHeroSection from '../components/AboutHeroSection'
 import FacilitiesInsur from '../components/FacilitiesInsur'
 import HolisticContactForm from '../components/HolisticContactForm';
-import Footer from '../Components/Footer'
+import Footer from '../components/Footer'
 
 const Insur = () => {
   return (
