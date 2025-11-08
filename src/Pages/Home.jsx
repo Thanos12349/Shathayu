@@ -9,7 +9,7 @@ import WellnessForm from '../components/WellnessForm';
 import GoogleReviews from '../components/GoogleReviews.jsx';
 import Gallery from '../components/Gallery';
 import HolisticContactForm from '../components/HolisticContactForm.jsx';
-import Footer from '../Components/Footer'
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
