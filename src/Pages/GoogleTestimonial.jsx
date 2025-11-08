@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../Components/Header'
+import Header from '../components/Header'
 import AboutHeroSection from '../components/AboutHeroSection'
 import GoogleReviews from '../components/GoogleReviews'
-import Footer from '../Components/Footer'
+import Footer from '../components/Footer'
 
 const Testimonial = () => {
   return (
