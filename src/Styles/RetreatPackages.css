@@ -1,0 +1,62 @@
+.retreat-section {
+  padding: 60px 0;
+  background-color: #faf9f7;
+}
+
+.retreat-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2e563b;
+  margin-bottom: 40px;
+}
+
+.retreat-card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.retreat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.retreat-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  display:inline;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2e563b;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #333;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.card-text li {
+  margin-bottom: 6px;
+}
+
+.retreat-btn {
+  background-color: #2e563b;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.retreat-btn:hover {
+  background-color: #1f3d28;
+}

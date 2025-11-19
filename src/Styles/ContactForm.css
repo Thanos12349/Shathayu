@@ -1,0 +1,195 @@
+/* ================= Overall Container ================= */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px 30px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  border-radius: 20px;
+}
+
+/* ================= Glassmorphic Form ================= */
+.contact-form {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= Input Rows ================= */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 48%;
+  padding: 14px 16px;
+  margin: 10px 1% 0;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 15px rgba(26, 188, 156, 0.3);
+  outline: none;
+}
+
+.contact-form textarea {
+  width: 100%;
+  min-height: 140px;
+  resize: vertical;
+  margin-top: 15px;
+}
+
+/* ================= Floating Form Header ================= */
+.contact-form h2 {
+  color: #1abc9c;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ================= Captcha ================= */
+.captcha {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.captcha span {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.captcha input {
+  width: 60px !important;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.3);
+  scroll-behavior: none;
+}
+
+/* ================= Submit Button ================= */
+.contact-form button {
+  margin-top: 25px;
+  padding: 16px;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(26, 188, 156, 0.4);
+}
+
+/* ================= Contact Info Glass Card ================= */
+.contact-info {
+  flex: 1 1 35%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info h2 {
+  color: #1abc9c;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.contact-info h3 {
+  color: #16a085;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  color: #333;
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #1abc9c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #16a085;
+  text-decoration: underline;
+}
+
+/* ================= Map Container ================= */
+.map-container {
+  margin-top: 40px;
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

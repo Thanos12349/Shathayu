@@ -1,0 +1,138 @@
+.google-review-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fafafa;
+}
+
+.review-title {
+  color: #1e5128;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.review-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  gap: 15px; }
+
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  padding: 20px;
+  flex-shrink: 0;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-time {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.review-stars {
+  margin: 8px 0;
+  color: #fbbc04;
+  font-size: 1.1rem;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  background-color: #fff;
+  border: none;
+  font-size: 2rem;
+  color: #1e5128;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  z-index: 1;
+  
+}
+
+.nav-button:hover {
+  background-color: #1e5128;
+  color: #fff;
+}
+
+.nav-button.left {
+  left: -50px;
+  z-index: 2;
+}
+
+.nav-button.right {
+  right: -50px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .review-card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-track {
+    gap: 10px;
+  }
+
+  .review-card {
+    width: 180px;
+  }
+
+  .nav-button.left {
+    left: 5px;
+  }
+
+  .nav-button.right {
+    right: 5px;
+  }
+}

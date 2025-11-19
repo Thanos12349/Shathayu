@@ -1,0 +1,74 @@
+.disease-section {
+  background: #fff;
+  padding: 80px 0;
+  position: relative;
+}
+
+.disease-heading {
+  font-size: 2.3rem;
+  color: #2e563b;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.disease-card {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.disease-icon {
+  font-size: 40px;
+  color: #2e563b;
+  margin-bottom: 10px;
+}
+
+.disease-card h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2e563b;
+  margin-bottom: 10px;
+}
+
+.disease-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.yoga-image {
+  width: 85%;
+  max-width: 400px;
+  object-fit: contain;
+}
+
+.infertility-card {
+  max-width: 400px;
+  margin: 50px auto 0 auto;
+}
+
+.disease-card:hover .disease-icon {
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  .disease-heading {
+    font-size: 1.8rem;
+  }
+  .yoga-image {
+    margin: 40px 0;
+  }
+}
+@media (min-width: 992px) {
+  .disease-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .disease-card {
+    margin: 0;
+  }
+  .infertility-card {
+    margin: 0;
+  }
+}
