@@ -1,3 +1,6 @@
+/* ===========================
+   FACILITIES MAIN CONTAINER
+   =========================== */
 .facilities-container {
   background: #f7fdfc;
   padding: 80px 40px;
@@ -13,46 +16,77 @@
   letter-spacing: 0.5px;
 }
 
+/* ===========================
+   GRID LAYOUT
+   =========================== */
 .facilities-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
-  justify-content: center;    
-  align-items: center;       
+  justify-content: center;
+  align-items: center;
   max-width: 1200px;
-  margin: 0 auto;              
-  padding: 0 20px;            
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
+/* ===========================
+   FACILITY CARD
+   =========================== */
 .facility-card {
   width: 100%;
   max-width: 330px;
-  background: #ffffff;
+  height: 220px; 
+  position: relative;
+  overflow: hidden;
+
   border: 2px solid #2a9d8f;
   border-radius: 14px;
-  padding: 25px 20px;
-  font-weight: 500;
-  color: #2a9d8f;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   transform-origin: left center;
   transition: all 0.5s ease;
-  perspective: 800px;
-  backface-visibility: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  position: relative;
 }
 
+/* Hover effect */
 .facility-card:hover {
   transform: rotateY(8deg) scale(1.03);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(135deg, #93ead8, #ffffff);
-}
-.facility-card p {
-  margin: 0;
-  font-size: 16px;
-  color: #146b58;
 }
 
+/* ===========================
+   IMAGE FIT PERFECTLY
+   =========================== */
+.facility-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* PERFECT FIT */
+  object-position: center;    /* Center crop */
+  display: block;
+}
+
+/* ===========================
+   DARK OVERLAY FOR TEXT
+   =========================== */
+.facility-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 18px 20px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.facility-overlay p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* ===========================
+   Decorative LEFT LINE
+   =========================== */
 .facility-card::before {
   content: "";
   position: absolute;
@@ -60,11 +94,14 @@
   left: 0;
   width: 6px;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.08), transparent);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 14px 0 0 14px;
+  z-index: 2;
 }
 
-/* Responsive adjustments */
+/* ===========================
+   RESPONSIVE
+   =========================== */
 @media (max-width: 768px) {
   .facilities-container {
     padding: 50px 20px;
@@ -77,6 +114,6 @@
 
   .facility-card {
     max-width: 90%;
-    padding: 20px;
+    height: 200px;
   }
 }
