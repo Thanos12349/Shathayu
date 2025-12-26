@@ -44,6 +44,20 @@ const reviews = [
     rating: 5,
     image: "/images/testi.png",
   },
+  {
+    name: "Thavamani Koti",
+    time: "1 year ago",
+    text: "Amazing place and people. The treatment helped me to refresh completely from inside out.",
+    rating: 5,
+    image: "/images/testi.png",
+  },
+  {
+    name: "Rahul Sharma",
+    time: "1 year ago",
+    text: "Great experience overall, peaceful environment and excellent hospitality.",
+    rating: 5,
+    image: "/images/testi.png",
+  },
 ];
 
 const GoogleReviews = () => {
@@ -59,43 +73,43 @@ const GoogleReviews = () => {
 
   return (
     <div className="google-review-section">
-      <h2 className="review-title">Our Google Reviews</h2>
+      <h2 className="review-title1">Our Google Reviews</h2>
       <p className="review-subtitle">
         Hear from our clients about the impact our programs have made on their journey
       </p>
 
       <div className="carousel-container">
-        <button className="nav-button left" onClick={prev}>
+        <div className="nav-button left" onClick={next}>
           &#10094;
-        </button>
+        </div>
 
         <div className="carousel">
           <div
             className="carousel-track"
-            style={{ transform: `translateX(-${index * 20}%)` }}
+            style={{ transform: `translateX(-${index * 20.25}%)` }}
           >
             {reviews.map((review, i) => (
               <div className="review-card" key={i}>
                 <div className="review-header">
                   <img src={review.image} alt={review.name} className="review-img" />
-                  <div>
-                    <h4>{review.name}</h4>
-                    <p className="review-time">{review.time}</p>
-                  </div>
                 </div>
+
                 <div className="review-stars">
+                   <h4>{review.name}</h4>
+                  <p className="review-time">{review.time}</p>
                   {"⭐".repeat(review.rating)}
                   {"☆".repeat(5 - review.rating)}
                 </div>
+
                 <p className="review-text">{review.text}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <button className="nav-button right" onClick={next}>
+        <div className="nav-button right" onClick={prev}>
           &#10095;
-        </button>
+        </div>
       </div>
     </div>
   );

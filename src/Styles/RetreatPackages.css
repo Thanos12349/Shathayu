@@ -1,62 +1,144 @@
+/* ---------------- Section Background (Single Fixed Image) ---------------- */
 .retreat-section {
-  padding: 60px 0;
-  background-color: #faf9f7;
+    padding: 4rem 1rem;
+    position: relative;
+    width: 100%;
+
+    /* ONLY ONE background image */
+    background-image: url('../images/wellnessBG.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* Parallax effect */
+    background-attachment: fixed;
 }
 
+/* Optional soft white overlay for readability */
+/* .retreat-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.55); 
+    z-index: 1;
+} */
+
+/* Content Wrapper */
+.retreat-container {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+.retreat-container1{
+    width: fit-content;
+   
+    text-align: center;
+    background: linear-gradient(90deg,#fdeeee,#94fadd);
+    margin: 0 auto;
+    padding: 0% 10px;
+    border-radius: 15px;
+}
+/* Heading */
 .retreat-heading {
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #2e563b;
-  margin-bottom: 40px;
+    font-family: "Bell MT", "Playfair Display", serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #047857;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
+/* Grid Layout */
+.retreat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2rem;
+}
+
+/* Card Wrapper */
 .retreat-card {
-  border: none;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #fff;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .retreat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-7px);
+    box-shadow: 0 15px 22px rgba(0, 0, 0, 0.12);
 }
 
-.retreat-card img {
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+/* Image Section */
+.retreat-image-wrapper {
+    height: 220px;
+    overflow: hidden;
 }
 
-.card-title {
-  display:inline;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #2e563b;
-  margin-bottom: 10px;
+.retreat-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
-.card-text {
-  font-size: 0.95rem;
-  color: #333;
-  padding-left: 15px;
-  margin-bottom: 15px;
+.retreat-card:hover .retreat-img {
+    transform: scale(1.08);
 }
 
-.card-text li {
-  margin-bottom: 6px;
+/* Content Section */
+.retreat-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
+/* Title */
+.retreat-title {
+    font-family: "Bell MT", "Playfair Display", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+/* Points List */
+.retreat-list {
+    font-family: "Bell MT", "Playfair Display", serif;
+    font-size: 1rem;
+    color: #555;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.retreat-list li {
+    margin-bottom: 8px;
+    line-height: 1.45;
+}
+
+/* Button */
 .retreat-btn {
-  background-color: #2e563b;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 18px;
-  font-weight: 500;
-  transition: background-color 0.3s;
+    margin-top: auto;
+    padding: 0.7rem 1.4rem;
+    background: #047857;
+    color: #fff;
+    font-family: "Bell MT", "Playfair Display", serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .retreat-btn:hover {
-  background-color: #1f3d28;
+    background: #035c43;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+    .retreat-heading {
+        font-size: 3rem;
+    }
 }

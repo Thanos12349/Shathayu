@@ -1,7 +1,14 @@
+.outter-gallery-container{
+  max-width: 100%;
+  background: linear-gradient(150deg ,rgba(192, 243, 243, 1),rgba(255, 255, 255, 1),rgba(18, 88, 1, 1));
+
+}
 .gallery-container {
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+
+  
 }
 
 .gallery-header {
@@ -34,13 +41,16 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 15px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5));
+  border-radius: 15px;
 }
 
 .image-card1 {
   position: relative;
   overflow: hidden; 
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0);
   cursor: pointer;
 }
 
@@ -63,8 +73,8 @@
   pointer-events: none;
 }
 .image-card1.hovered img {
-  transform: scale(1.08); 
-  filter: brightness(0.9);
+
+  filter: brightness(0.8);
 }
 
 .image-card1.hovered .overlay {

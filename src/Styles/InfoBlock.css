@@ -1,0 +1,46 @@
+.info-block {
+  max-width: 1200px;
+  margin: 3px auto;
+  padding: 22px 28px;
+  background: linear-gradient(135deg, #f9fffc, #eefaf4);
+
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.info-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.info-block p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+.info-block::before {
+  font-size: 18px;
+  color: #8c9ff1;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .info-block {
+    padding: 18px 20px;
+  }
+
+  .info-block p {
+    font-size: 15px;
+  }
+}

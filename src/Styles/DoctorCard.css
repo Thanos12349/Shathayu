@@ -19,18 +19,20 @@
 }
 
 .card-content {
-  padding: 20px;
+  padding-top: 45px!important;
 }
 
 .card-content h2 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
+  color: black;
 }
 
 .card-content p {
   margin: 0;
   font-size: 14px;
+  color: black;
 }
 
 .watch-btn {
@@ -41,6 +43,7 @@
   cursor: pointer;
   margin-top: 10px;
   font-size: 14px;
+  color: black;
 }
 
 .card-description {
@@ -49,6 +52,7 @@
   font-size: 14px;
   border-top: 1px solid #ffffff;
   animation: fadeIn 0.4s ease-in-out;
+  color: black;
 }
 
 @keyframes fadeIn {

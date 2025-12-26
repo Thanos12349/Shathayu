@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/OfferingsSection.css'; 
+
 const offeringsData = [
   {
     icon: '🧘', 
@@ -9,12 +10,12 @@ const offeringsData = [
   {
     icon: '🏞️', 
     title: 'Healing through Energy Approach',
-    description: 'Tuhitu may be a modest space, but it carries warmth, care, and spiritual grounding. Every visit feels lighter — emotionally, mentally, and physically — as the therapies and atmosphere balance your inner energies.',
+    description: 'Tuhitu may be a modest space, but it carries warmth, care, and spiritual grounding. Every visit feels lighter — emotionally, mentally, and physically — as the therapies and atmosphere balance your inner energies.',
   },
   {
-    icon: ' 🧘',
+    icon: '🧘',
     title: 'Community & Compassion Approach',
-    description: 'A comforting place for healing and belonging At Tuhitu, you’re not just cared for — you’re understood. The peaceful setting and heartfelt presence of our team help nurture a sense of comfort and quiet joy in daily healing routines.',
+    description: 'A comforting place for healing and belonging. At Tuhitu, you’re not just cared for — you’re understood. The peaceful setting and heartfelt presence of our team help nurture a sense of comfort and quiet joy in daily healing routines.',
   },
 ];
 
@@ -25,20 +26,22 @@ const OfferingsSection = () => {
         
         <div className="offerings-images">
           <div className="image-card image-1">
-
             <img src="images/offe.png" alt="Retreat View 1" />
           </div>
           <div className="image-card image-2">
-            
             <img src="images/offe.png" alt="Retreat View 2" />
           </div>
         </div>
 
         <div className="offerings-content">
+          <div className='offering-content1'>
+
+        
           <h2 className="offerings-heading">Explore Our Offerings</h2>
           <p className="offerings-subheading">
-            Customized Wellness Experiences Discover the Benefits of Our Holistic Approach
+            Customized Wellness Experiences — Discover the Benefits of Our Holistic Approach
           </p>
+            </div>
 
           <div className="offerings-list">
             {offeringsData.map((offering, index) => (
@@ -52,6 +55,7 @@ const OfferingsSection = () => {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );

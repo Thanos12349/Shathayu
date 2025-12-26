@@ -196,12 +196,12 @@ const ContactForm = () => {
           <p>Fill out the form and we will get back to you as soon as possible.</p>
 
           <h3>Shathayu Retreat</h3>
-          <p>📍 Shathayu Ayurveda Yoga Retreat, S.No.261, Avathi, Devanahalli, Bangalore – 562110.</p>
+          <p>Shathayu Ayurveda Yoga Retreat, S.No.261, Avathi, Devanahalli, Bangalore – 562110.</p>
           <p>📞 +91 88841 33300</p>
           <p>✉️ info@shathayuretreat.com</p>
 
           <h3>Corporate Office</h3>
-          <p>📍 Shathayu Ayurveda #578, 4th Cross, HMT Layout, CBI Main Road, R.T.Nagar, Bangalore -560032.</p>
+          <p>Shathayu Ayurveda #578, 4th Cross, HMT Layout, CBI Main Road, R.T.Nagar, Bangalore -560032.</p>
           <p>📞 +91 80236 35171</p>
           <p>✉️ info@shathayuretreat.com</p>
         </div>

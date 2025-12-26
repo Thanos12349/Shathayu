@@ -1,0 +1,56 @@
+.video-wrapper {
+  width: 100%;
+  text-align: center;
+
+  padding-bottom: 20px;
+  background-image: url("/images/welcome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.video-heading {
+  color: rgb(21, 88, 6);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-video {
+  width: 80%;
+  height: 600px;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+.buttondiv{
+  padding: 10px;
+}
+.video-button{
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  color: #111;
+  background: linear-gradient(90deg, rgb(231, 200, 126), #4a1818);
+  /* transition: 0.25s ease-in-out; */
+  /* box-shadow: 0px 3px 12px rgba(255, 223, 0, 0.5); */
+}
+
+.video-button:hover {
+  background: linear-gradient(90deg, rgb(231, 200, 126));
+  transform: translateY(-2px);
+}
+
+.video-button:active {
+  transform: scale(0.97);
+}

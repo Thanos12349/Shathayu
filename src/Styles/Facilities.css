@@ -2,18 +2,33 @@
    FACILITIES MAIN CONTAINER
    =========================== */
 .facilities-container {
-  background: #f7fdfc;
   padding: 80px 40px;
   text-align: center;
   overflow: hidden;
+
+  /* background image */
+  background-image: url("/images/welcome.png")!important;
+  background-size: cover;
+  background-position: center;
+
+  /* fallback color */
+  background-color: #f7fdfc;
+  background-attachment: fixed!important;
 }
 
+
 .facilities-title {
+  width: fit-content;
+  padding: 6px 6px;
   font-size: 32px;
   color: #064e3b;
   margin-bottom: 50px;
+  margin: 0 auto;
   font-weight: 700;
+  border-radius: 15px;
   letter-spacing: 0.5px;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.5) ,rgba(15, 15, 15, 0.5) );
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
 }
 
 /* ===========================
@@ -27,19 +42,18 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+
 }
 
 /* ===========================
    FACILITY CARD
    =========================== */
-.facility-card {
+.facility-card1 {
   width: 100%;
-  max-width: 330px;
-  height: 220px; 
+  max-width: 400px;
+  height: 100%; 
   position: relative;
   overflow: hidden;
-
   border: 2px solid #2a9d8f;
   border-radius: 14px;
   transform-origin: left center;
@@ -49,7 +63,7 @@
 }
 
 /* Hover effect */
-.facility-card:hover {
+.facility-card1:hover {
   transform: rotateY(8deg) scale(1.03);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
@@ -81,13 +95,13 @@
   margin: 0;
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff;
+  color: #ffffff; 
 }
 
 /* ===========================
    Decorative LEFT LINE
    =========================== */
-.facility-card::before {
+.facility-card1::before {
   content: "";
   position: absolute;
   top: 0;

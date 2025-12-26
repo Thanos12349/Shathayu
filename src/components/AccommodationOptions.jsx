@@ -26,7 +26,7 @@ const roomOptions = [
 const AccommodationOptions = () => {
   return (
     <section className="accommodation-section">
-      <h2 className="accommodation-heading">Our Accommodation Options:</h2>
+      <h2 className="accommodation-heading">Our Accommodation Options</h2>
       
       <div className="card-container">
         {roomOptions.map((room, index) => (

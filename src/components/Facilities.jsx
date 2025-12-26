@@ -67,7 +67,7 @@ const Facilities = () => {
         {facilities.map((facility, index) => (
           <Motion.div
             key={index}
-            className="facility-card"
+            className="facility-card1"
             initial={{ rotateY: 90, opacity: 0 }}
             whileInView={{ rotateY: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.4 }}

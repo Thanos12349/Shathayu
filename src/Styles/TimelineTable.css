@@ -1,0 +1,125 @@
+.timeline {
+  height: calc(90vh - 140px);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  overflow-y: auto;
+  position: relative;
+  scroll-behavior: smooth;
+  background: linear-gradient(180deg, #f8fbff, #ffffff);
+  border-radius: 24px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+.timeline::-webkit-scrollbar {
+  width: 6px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2f80ed, #56ccf2);
+  border-radius: 10px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Vertical Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, #2f80ed, #56ccf2);
+  opacity: 0.3;
+}
+
+.timeline-row {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.6s ease;
+  position: relative;
+}
+
+.timeline-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-row.active .timeline-content {
+  background: linear-gradient(135deg, #2f80ed, #56ccf2);
+  color: #ffffff;
+}
+
+/* ===== Dot ===== */
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #2f80ed;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  margin-left: 30px;
+  box-shadow: 0 0 0 6px rgba(47, 128, 237, 0.15);
+  transition: all 0.3s ease;
+}
+
+.timeline-row.active .timeline-dot {
+  box-shadow: 0 0 0 10px rgba(47, 128, 237, 0.25);
+}
+
+/* ===== Content Card ===== */
+.timeline-content {
+  background: #ffffff;
+  padding: 18px 22px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  width: 100%;
+}
+
+/* Hover */
+.timeline-row:hover .timeline-content {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Time */
+.timeline-time {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2f80ed;
+  margin-bottom: 6px;
+}
+
+.timeline-row.active .timeline-time {
+  color: #eaf4ff;
+}
+
+/* Activity */
+.timeline-activity {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .timeline {
+    height: calc(100vh - 100px);
+    padding: 30px 14px;
+  }
+
+  .timeline::before {
+    left: 24px;
+  }
+
+  .timeline-dot {
+    margin-left: 18px;
+  }
+}

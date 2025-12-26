@@ -8,7 +8,7 @@ const RetreatPackages = () => {
       title: "Residential wellness packages",
       points: [
         "Perfect for those seeking a long-stay rejuvenation experience or a peaceful staycation in nature’s embrace.",
-        "Each retreat is thoughtfully curated to help guests rest deeply, heal naturally, and rediscover inner balance."
+        "Each retreat is thoughtfully curated to help guests rest deeply, heal naturally, and rediscover inner balance."
       ]
     },
     {
@@ -16,49 +16,52 @@ const RetreatPackages = () => {
       title: "Detox Retreat",
       points: [
         "Ayurveda Detox enhances metabolism, alleviates disease conditions and nourishes the body.",
-        "Intense detox methods work at the cellular level, allowing your body’s biological systems to return to a state of balance and healing."
+        "Intense detox methods work at the cellular level, restoring balance and boosting healing."
       ]
     },
     {
       img: "/images/offe.png",
       title: "Woman Wellness Retreat",
       points: [
-        "Addresses the unique needs of women’s health, including hormonal changes, sexual health, skin care, bone and joint well-being, and menstrual concerns.",
-        "The program aims to release emotional stress by enabling them to unwind, recharge and revive themselves."
+        "Supports women’s health: hormonal balance, skin care, joints, digestion, and menstrual well-being.",
+        "Helps release emotional stress, unwind deeply, recharge and revive from within."
       ]
     },
     {
       img: "/images/offe.png",
       title: "Stress Relief Retreat",
       points: [
-        "The program involves personalised detailed physical and mental assessments to understand the cause of chronic stress.",
-        "Combination of yoga, pranayama, meditation, Ayurveda therapy, herbal body pack, beauty therapy, music therapy, etc."
+        "Includes detailed assessments to identify root causes of chronic stress.",
+        "Yoga, pranayama, meditation, Ayurveda therapy, herbal pack, beauty therapy, music therapy & more."
       ]
     }
   ];
 
   return (
-    <section className="retreat-section text-center">
-      <h2 className="retreat-heading">Our Retreat Packages</h2>
-      <div className="container">
-        <div className="row justify-content-center">
+    <section className="retreat-section">
+      <div className="retreat-container">
+        <div className="retreat-container1">
+            <h2 className="retreat-heading">Our Retreat Packages</h2>
+        </div>
+        
+
+        <div className="retreat-grid">
           {retreats.map((item, index) => (
-            <div key={index} className="col-md-6 col-lg-3 mb-4 d-flex">
-              <div className="card retreat-card shadow-sm flex-fill">
-                <img src={item.img} className="card-img-top" alt={item.title} />
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">{item.title}</h5>
-                  <ul className="card-text text-start">
-                    {item.points.map((p, i) => (
-                      <li key={i}>{p}</li>
-                    ))}
-                  </ul>
-                  <div className="mt-auto">
-                    <button className="btn btn-success retreat-btn">
-                      Know More
-                    </button>
-                  </div>
-                </div>
+            <div key={index} className="retreat-card">
+              <div className="retreat-image-wrapper">
+                <img src={item.img} alt={item.title} className="retreat-img" />
+              </div>
+
+              <div className="retreat-content">
+                <h3 className="retreat-title">{item.title}</h3>
+
+                <ul className="retreat-list">
+                  {item.points.map((point, pIndex) => (
+                    <li key={pIndex}>{point}</li>
+                  ))}
+                </ul>
+
+                <button className="retreat-btn">Know More</button>
               </div>
             </div>
           ))}

@@ -1,0 +1,124 @@
+.seyraya-wrapper {
+  max-width: 1300px;
+  margin: 50px auto;
+  padding: 0 24px;
+  font-family: "Poppins", sans-serif;
+  color: #1f3d33;
+  display: flex;
+  flex-direction: column;
+}
+
+/* INTRO */
+.seyraya-intro {
+    flex: 1;
+    margin: 0 auto;
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.seyraya-intro h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.seyraya-intro p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  color: #345f55;
+}
+
+.soft-text {
+  color: #4f766d;
+}
+
+/* IMAGE GRID */
+.seyraya-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 90px;
+}
+
+.seyraya-images img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.seyraya-images img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* PHILOSOPHY */
+.seyraya-philosophy {
+  max-width: 820px;
+}
+
+.seyraya-philosophy h3 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.highlight-line {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2f6f62;
+  margin-bottom: 22px;
+}
+
+.seyraya-philosophy p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* POINTS */
+.philosophy-points {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.philosophy-points li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  color: #345f55;
+}
+
+.philosophy-points li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #2f6f62;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .seyraya-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .seyraya-intro h2 {
+    font-size: 32px;
+  }
+
+  .seyraya-philosophy h3 {
+    font-size: 26px;
+  }
+
+  .seyraya-images img {
+    height: 260px;
+  }
+}

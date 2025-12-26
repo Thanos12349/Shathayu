@@ -1,0 +1,64 @@
+.floating-video-container {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 9999;
+  width: 300px;
+  height: 170px;
+  display: block;
+ 
+}
+
+.fvp-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #000;
+  cursor: pointer;
+  border-radius: 5%!important;
+}
+
+.fvp-controls-top {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.fvp-btn-close {
+  width: 28px;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.fvp-bottom-controls {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fvp-btn {
+  padding: 4px 10px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.fvp-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

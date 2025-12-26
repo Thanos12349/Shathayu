@@ -84,7 +84,8 @@ const VideoGallery = () => {
 
     return (
         <>
-            <div className="video-gallery-header">
+        <div className="video-container">
+              <div className="video-gallery-header">
                 <h2 className="review-title">Video Testimonials</h2>
             </div>
 
@@ -130,6 +131,9 @@ const VideoGallery = () => {
                     </div>
                 ))}
             </div>
+
+        </div>
+          
         </>
     );
 };

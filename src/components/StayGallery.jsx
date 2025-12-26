@@ -21,7 +21,9 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-container">
+    <>
+    <div className='outter-gallery-container'>
+       <div className="gallery-container">
       <header className="gallery-header">
         <h2>Gallery</h2>
         <button className="view-more-btn">View More</button>
@@ -41,6 +43,10 @@ const Gallery = () => {
         ))}
       </div>
     </div>
+
+    </div>
+    </>
+   
   );
 };
 
