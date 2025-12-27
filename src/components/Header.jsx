@@ -30,10 +30,10 @@ const Header = () => {
         { name: "Women's Hormonal Balance", href: "/WomensHormonalBalancePage" },
       ],
     },
-    { name: "Our Healing Spaces", href: "/HealingSpaces" },
+    { name: "Healing Spaces", href: "/HealingSpaces" },
     { name: "Soulful Cuisine", href: "/SoulfulCuisine" },
     { name: "Behind Seyraya", href: "/BehindSeyraya" },
-    { name: "Made For You Package", href: "/about" },    
+    { name: "Packages", href: "/about" },    
     { name: "Contact Us", href: "/contact" },
   ];
 
