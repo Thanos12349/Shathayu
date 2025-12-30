@@ -1,0 +1,117 @@
+.welcome-section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    background:
+      linear-gradient(rgba(247, 253, 252, 0.85), rgba(247, 253, 252, 0.85)),
+      url("/images/welcome.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.image-panel,
+.content-panel {
+    flex: 2;
+}
+
+.retreat-image {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+.content-panel {
+    max-width: 1200px;
+    padding: 30px 32px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.welcome-title {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #064e3b;
+    margin-bottom: 20px;
+}
+
+.retreat-description {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #2f2f2f;
+    margin-bottom: 14px;
+}
+
+.core-belief {
+    margin-top: 24px;
+    padding: 16px 22px;
+    border-left: 5px solid #2a9d8f;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(4px);
+    font-style: italic;
+    color: #444;
+}
+
+@media (max-width: 900px) {
+    .welcome-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content-panel {
+        padding: 24px;
+    }
+
+    .welcome-title {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animated-element {
+    opacity: 0;
+}
+
+.fade-in-left {
+    animation: fadeInFromLeft 1s ease-out forwards;
+}
+
+.fade-in-right {
+    animation: fadeInFromRight 1s ease-out forwards;
+}

@@ -1,0 +1,151 @@
+/* ===== PAGE ===== */
+.hs-page {
+  font-family: "Poppins", "Inter", sans-serif;
+  background: #f9fbff;
+  color: #1f2933;
+}
+
+/* ===== HEALING SPACES ===== */
+.hs-section {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.hs-heading {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #2f80ed;
+}
+
+.hs-location-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hs-location-card {
+  width: 260px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease;
+}
+
+.hs-location-card:hover {
+  transform: translateY(-6px);
+}
+
+.hs-location-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.hs-location-card span {
+  display: block;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hs-arrow {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2f80ed;
+}
+
+/* ===== WELLNESS PACKAGES ===== */
+.wp-section {
+  padding: 20px 20px;
+}
+
+.wp-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.wp-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* ===== FLIP CARD ===== */
+.wp-flip-card {
+  perspective: 1200px;
+}
+
+.wp-card-inner {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  
+  
+}
+
+.wp-flip-card:hover .wp-card-inner {
+  transform: rotateY(180deg);
+}
+
+.wp-card-front,
+.wp-card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  padding: 28px;
+  backface-visibility: hidden;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* Front */
+.wp-card-front {
+  background: linear-gradient(135deg, #ffffff, #eef4ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/images/tv.png);
+}
+
+.wp-card-front h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.wp-card-front p {
+  color: #2f80ed;
+  font-weight: 600;
+}
+
+/* Back */
+.wp-card-back {
+  background: linear-gradient(135deg, #2f80ed, #56ccf2);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hs-heading {
+    font-size: 34px;
+  }
+
+  .wp-heading {
+    font-size: 30px;
+  }
+
+  .hs-arrow {
+    display: none;
+  }
+}

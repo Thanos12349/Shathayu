@@ -1,0 +1,192 @@
+/* ============================
+   OUR STORY SECTION
+============================ */
+
+.ourstory-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 40px 0px 0px;
+  /* padding: 100px; */
+  font-family: "Georgia", "Times New Roman", serif;
+
+  background-image: url("../images/03.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* White Content Box */
+.ourstory-container {
+  background-image: url("../images/5354823.jpg") ;
+  opacity: 0.92;
+  /* background-color: #ffffff; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 70px;
+  text-align: center;
+}
+
+/* ============================
+   HEADINGS
+============================ */
+
+.ourstory-label {
+  letter-spacing: 3px;
+  color: #b59a5a;
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.ourstory-heading {
+  font-size: 46px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.35;
+  max-width: 860px;
+  margin: 0 auto 30px;
+}
+
+.ourstory-subheading {
+  font-size: 19px;
+  font-style: italic;
+  color: #333;
+  max-width: 760px;
+  margin: 0 auto 80px;
+  line-height: 1.6;
+}
+
+/* ============================
+   TEXT GRID
+============================ */
+
+.ourstory-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  text-align: left;
+}
+
+.ourstory-text p {
+  font-size: 16.5px;
+  line-height: 2;
+  color: #1f1f1f;
+  margin-bottom: 28px;
+}
+
+.highlight {
+  color: #b59a5a;
+  font-weight: 500;
+}
+
+/* ============================
+   IMAGE CARDS (FIXED)
+============================ */
+
+.ourstory-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  max-width: 1050px;        /* centers card group */
+  margin: 90px auto 0;     /* center horizontally */
+}
+
+/* Card */
+.story-card {
+  position: relative;
+  height: 220px;            /* correct height */
+  min-height: 220px;        /* prevents collapse */
+
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* 🔥 image visibility fix */
+
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Dark overlay */
+.story-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.15)
+  );
+
+  z-index: 1;               /* 🔥 layering fix */
+}
+
+/* Card text */
+.story-card span {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  z-index: 2;               /* above overlay */
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 992px) {
+  .ourstory-container {
+    padding: 60px 40px;
+  }
+
+  .ourstory-heading {
+    font-size: 36px;
+  }
+
+  .ourstory-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .ourstory-cards {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .story-card {
+    height: 200px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ourstory-container {
+    padding: 50px 25px;
+  }
+
+  .ourstory-heading {
+    font-size: 28px;
+  }
+
+  .ourstory-subheading {
+    font-size: 16px;
+  }
+
+  .ourstory-text p {
+    font-size: 15px;
+  }
+}

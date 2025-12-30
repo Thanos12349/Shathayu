@@ -1,0 +1,127 @@
+.image-6910df-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif; 
+}
+
+.image-6910df-main-heading {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #38761d; 
+    margin-bottom: 60px;
+}
+
+.image-6910df-main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 40px; 
+}
+
+.image-6910df-legacy-panel {
+    flex: 1; 
+    text-align: center;
+    padding: 20px;
+}
+
+.image-6910df-legacy-number {
+    font-size: 15em; 
+    font-weight: 700;
+    line-height: 0.9; 
+    background-image: linear-gradient(100deg, #6aa84f, #38761d); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.image-6910df-legacy-text {
+    font-size: 3em;
+    font-weight: 400;
+    color: #333;
+    margin-top: 10px;
+}
+
+.image-6910df-philosophy-box {
+    flex: 1; 
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    border-radius: 4px;
+    min-height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.image-6910df-philosophy-box p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.image-6910df-accreditation-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 40px;
+    padding: 40px 40px;
+    background-color: #f7f7f7; 
+}
+
+.image-6910df-accreditation-text-box {
+    flex: 2; 
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.image-6910df-accreditation-text-box p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.image-6910df-nabh-logo-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-6910df-nabh-logo {
+    width: 200px; 
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .image-6910df-legacy-number {
+        font-size: 10em; 
+    }
+    .image-6910df-legacy-text {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .image-6910df-main-content,
+    .image-6910df-accreditation-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image-6910df-legacy-panel,
+    .image-6910df-philosophy-box,
+    .image-6910df-accreditation-text-box,
+    .image-6910df-nabh-logo-panel {
+        width: 100%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,90 @@
+.doctor-card {
+  width: 90%;
+  max-width: 750px;
+  background-color: #2b6c3f;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding-top: 45px!important;
+}
+
+.card-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.watch-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.card-description {
+  background-color: #3b9156;
+  padding: 15px 20px;
+  font-size: 14px;
+  border-top: 1px solid #ffffff;
+  animation: fadeIn 0.4s ease-in-out;
+  color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-footer {
+  background-color: #3b9156;
+  border-top: 1px solid #ffffff;
+}
+
+.know-more-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.know-more-btn:hover {
+  background-color: #327b48;
+}

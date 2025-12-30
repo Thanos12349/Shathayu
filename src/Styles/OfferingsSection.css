@@ -1,0 +1,230 @@
+/* ---------------- Section Background (Flower + BG) ---------------- */
+.offerings-section {
+    padding: 4rem 1rem;
+    width: 100%;
+    position: relative;
+
+    /* Multiple background layers (flower PNG + main background) */
+    background-image:url('../images/03.png'); /* 🌄 Main background */
+
+    background-size: cover;
+    background-position: center;
+
+    /* Parallax effect */
+    background-attachment: fixed;     /* main BG stays fixed on scroll */
+}
+
+/* Optional white overlay for readability */
+/* .offerings-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.55);
+    z-index: 1;
+    pointer-events: none;
+} */
+
+.offerings-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* keeps content above overlay */
+}
+.offering-content1 {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0.4)
+    );
+    padding: 0px 10px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+}
+
+/* ---------------- Images Section ---------------- */
+.offerings-images {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    margin-bottom: 2rem;
+    perspective: 2000px;
+}
+
+/* Base style for both image cards */
+.image-card {
+    position: absolute;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.8s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+}
+
+.image-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+/* Layered images */
+.image-1 {
+    width: 80%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: rotate(-4deg);
+    animation: float 3s ease-in-out infinite;
+}
+
+.image-2 {
+    width: 80%;
+    height: 90%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transform: rotate(4deg);
+    animation: float2 3s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.offerings-images:hover .image-1 {
+    transform: rotate(-1deg) translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.offerings-images:hover .image-2 {
+    transform: rotate(1deg) translateY(10px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.image-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Float animations */
+@keyframes float {
+    0% { transform: translateY(0) rotate(-3deg); }
+    50% { transform: translateY(-8px) rotate(-2deg); }
+    100% { transform: translateY(0) rotate(-3deg); }
+}
+
+@keyframes float2 {
+    0% { transform: translateY(0) rotate(3deg); }
+    50% { transform: translateY(8px) rotate(2deg); }
+    100% { transform: translateY(0) rotate(3deg); }
+}
+
+/* ---------------- Text Section ---------------- */
+.offerings-content {
+    width: 100%;
+    max-width: 600px;
+}
+
+.offerings-heading {
+    font-family: "Bell MT", "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.offerings-subheading {
+    font-family: "Bell MT", "Playfair Display", serif;
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.offerings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.offering-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.offering-icon {
+    font-family: "Bell MT", "Playfair Display", serif;
+    font-size: 2rem;
+    color: #047857;
+    flex-shrink: 0;
+    width: 2.5rem;
+    text-align: center;
+}
+
+.offering-title {
+    font-family: "Bell MT", "Playfair Display", serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.offering-description {
+    font-family: "Bell MT", "Playfair Display", serif;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (min-width: 768px) {
+    .offerings-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .offerings-images {
+        flex: 1;
+        min-width: 40%;
+        margin-bottom: 0;
+        height: 500px;
+    }
+
+    .image-1,
+    .image-2 {
+        width: 85%;
+        height: 85%;
+    }
+
+    .offerings-content {
+        flex: 1;
+        min-width: 55%;
+        padding-left: 3rem;
+    }
+
+    .offerings-heading,
+    .offerings-subheading {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .offerings-heading {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,53 @@
+.panchakarma-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.section-header p {
+  color: #6b7280;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.benefit-card {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.plan-card {
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.plan-card.active {
+  border-color: #10b981;
+  background: #ecfdf5;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  padding: 10px 0;
+  border-bottom: 2px linen #e5e7eb;
+}

@@ -1,0 +1,108 @@
+/* --- Global Section Styling --- */
+.accommodation-section {
+  padding: 40px 20px;
+  max-width: 100%; /* Wider container for the desktop view */
+  margin: 0 auto;
+  text-align: center;
+   background-image: url("../images/banner-4-scaled.jpg"); /* change this to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* makes background fixed while scrolling */
+  background-repeat: no-repeat;
+}
+
+.accommodation-heading {
+  width: fit-content;
+  font-size: 2.5rem;
+  font-weight: 500; /* Medium weight similar to the image */
+  color: #38761d; /* Green color to match the theme */
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 10px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+/* --- Card Grid Layout --- */
+.card-container {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 30px; /* Space between cards */
+  justify-content: center;
+  padding: 20px 60px;
+   background: linear-gradient(150deg, rgba(255, 255, 255, 0.5) ,rgba(15, 15, 15, 0.5) );
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+
+}
+
+/* --- Individual Card Styling --- */
+.accommodation-card {
+  flex: 1 1 300px; /* Allows the card to grow/shrink, minimum width 300px */
+  max-width: 380px; /* Optional: Set a max width for large screens */
+  background: rgba(253, 255, 238, 0.5);
+  border: 1px solid #e0e0e0; /* Subtle border for the entire card */
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Very light shadow */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.accommodation-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Image Styling --- */
+.card-image-wrapper {
+  padding: 15px; /* Padding around the image inside the border */
+  border: 1px solid #e0e0e0; /* The inner border shown in the image */
+  border-radius: 4px;
+}
+
+.card-image {
+  width: 100%;
+  height: 250px; /* Fixed height for image consistency */
+  object-fit: cover; /* Ensures image covers the area without distortion */
+  display: block;
+}
+
+/* --- Content Styling --- */
+.card-content {
+  padding: 20px 15px;
+}
+
+.room-type-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #38761d; /* Green for the room title */
+  margin-bottom: 10px;
+}
+
+.room-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* --- Media Query for Mobile Responsiveness --- */
+@media (max-width: 992px) {
+  .card-container {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accommodation-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Stack cards vertically on smaller screens */
+  .accommodation-card {
+    flex-basis: 100%;
+    max-width: 500px;
+  }
+}

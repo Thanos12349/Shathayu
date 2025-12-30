@@ -1,0 +1,50 @@
+.benefit-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+/* Hover interaction */
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Check Icon */
+.benefit-icon {
+  min-width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #2f80ed, #56ccf2);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.benefit-text {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .benefit-card {
+    padding: 14px 16px;
+  }
+
+  .benefit-text {
+    font-size: 14px;
+  }
+}

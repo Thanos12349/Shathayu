@@ -1,0 +1,89 @@
+.facilities-container {
+  background: #f7fdfc;
+  padding: 80px 40px;
+  text-align: center;
+  overflow: hidden;
+ 
+}
+
+.facilities-title {
+  font-size: 32px;
+  color: #064e3b;
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;    
+  align-items: stretch; /* Make all cards stretch to same height */
+  max-width: 1200px;
+  margin: 0 auto;              
+  padding: 0 20px;            
+}
+
+.facility-card {
+  display: flex;
+  flex-direction: column; /* Make content flow vertically */
+  justify-content: space-between; /* Keeps heading and text spaced evenly */
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #2a9d8f;
+  border-radius: 14px;
+  padding: 25px 20px;
+  font-weight: 500;
+  color: #2a9d8f;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transform-origin: left center;
+  transition: all 0.5s ease;
+  perspective: 800px;
+  backface-visibility: hidden;
+  cursor: pointer;
+  position: relative;
+  min-height: 220px; /* optional: set a minimum height */
+}
+
+
+.facility-card:hover {
+  transform: rotateY(8deg) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #93ead8, #ffffff);
+}
+.facility-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+.facility-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.08), transparent);
+  border-radius: 14px 0 0 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .facilities-container {
+    padding: 50px 20px;
+  }
+
+  .facilities-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .facility-card {
+    max-width: 90%;
+    padding: 20px;
+  }
+}

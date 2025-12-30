@@ -1,0 +1,142 @@
+.pk-wrapper {
+  max-width: 1400px;
+  margin: 10px auto;
+  padding: 20px 40px;
+  font-family: "Inter", "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #e0f0ff, #ffffff);
+  background-image: url("/images/banner-1-scaled.jpg");
+  border-radius: 15px;
+  background-attachment: fixed;
+}
+.pk-title-wrapper{
+  width: fit-content;
+  padding: 0px 10px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7));
+  border-radius: 25px;
+}
+/* Header */
+.pk-title {
+ 
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 900;
+  text-align: center;
+  color: #1c3faa;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #2f80ed, #56ccf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pk-subtitle {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5f6c7b;
+}
+
+/* Plan cards container */
+.pk-plan {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual Plan Card */
+.pk-plan > .pk-plan {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 40px 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 35px 60px rgba(0,0,0,0.15);
+  transition: all 0.5s ease;
+}
+
+/* Days Grid */
+.pk-days {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin: 20px;
+  position: relative;
+}
+
+/* Timeline line */
+.pk-days::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #2f80ed, #56ccf2);
+  border-radius: 4px;
+}
+
+/* Day Card */
+.pk-day-card {
+  background: linear-gradient(145deg, #ffffff, #f0f6ff);
+  border-radius: 28px;
+  padding: 28px 24px;
+  box-shadow: 0 25px 55px rgba(0,0,0,0.12);
+  transition: all 0.45s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+
+/* Day title with icon */
+.pk-day-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2f80ed;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pk-day-title::before {
+  content: "🕘";
+  font-size: 18px;
+}
+
+/* Activity list */
+.pk-activity-list li {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pk-activity-list li::before {
+  content: "✔️";
+}
+
+/* Entrance animation */
+.pk-plan, .pk-day-card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+.pk-plan:nth-child(1) { animation-delay: 0.1s; }
+.pk-plan:nth-child(2) { animation-delay: 0.3s; }
+.pk-plan:nth-child(3) { animation-delay: 0.5s; }
+
+@keyframes fadeSlide {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .pk-days {
+    grid-template-columns: 1fr;
+  }
+}
