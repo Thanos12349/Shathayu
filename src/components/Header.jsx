@@ -40,7 +40,7 @@ const Header = () => {
         <div className="navbar-flex-content">
           {/* Logo */}
           <Link to="/" className="navbar-logo text-decoration-none">
-            <img className="logo-main" src="/images/logo.png" alt="" />
+            <img className="logo-main" src="/images/bio_logo.png" alt="" />
             
           </Link>
 
