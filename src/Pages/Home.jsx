@@ -12,23 +12,25 @@ import Welcome from '../components/Welcome.jsx';
 import CentreSection from '../components/CenterSection.jsx';
 import OurStory from '../components/OurStory.jsx';
 import CuisinePhilosophy from '../components/Cusine.jsx';
+import BiomeMethod from '../components/BiomeMethod.jsx';
 
 
 const Home = () => {
     return (
         <>
-            <FloatingVideoPopup videoSrc="https://9wyna8jwrlz8jibj.public.blob.vercel-storage.com/04.mp4" poster="/images/01.png" />
+            {/* <FloatingVideoPopup videoSrc="https://9wyna8jwrlz8jibj.public.blob.vercel-storage.com/04.mp4" poster="/images/01.png" /> */}
             <Header />
             <HeroSection />
-            <Welcome />
-            <OurStory />
+            {/* <Welcome />
+            <OurStory /> */}
             <AboutRetreat />
-            <CentreSection />
+            <BiomeMethod />
+            {/* <CentreSection />
             <RetreatPackages />
             <CuisinePhilosophy />
             <GoogleReviews />
             <Gallery />
-            <HolisticContactForm />
+            <HolisticContactForm /> */}
             <Footer />
         </>
     )

@@ -3,24 +3,27 @@ import '../Styles/HeroSection.css';
 
 const heroContent = [
   {
-    title: "Seyraya",
-    subtitle: "The pure source of spiritual insight and holistic wellbeing",
-    description: "Experience a unique blend of nature and wellness.",
-    buttonText: "Contact Us",
+    title: "The Future of Daily Nutrition",
+    subtitle: "In One Delicious Gummy",
+    description:
+      "Wellness that your body needs. A taste you’ll crave every single day.",
+    buttonText: "Shop Gummies",
     imageSrc: "/images/banner-1-scaled.jpg",
   },
   {
-    title: "Holistic Wellness",
-    subtitle: "A path that guides you toward inner balance",
-    description: "Our Ayurveda expert will connect with you shortly with personalised guidance.  ",
-    buttonText: "Book Now",
+    title: "Science-Backed Functional Gummies",
+    subtitle: "Support your body the smarter way",
+    description:
+      "Stronger immunity • Deeper sleep • Radiant skin & hair • Calmer stress response • All-day natural energy • Healthy growing kids",
+    buttonText: "Find Your Perfect Routine",
     imageSrc: "/images/banner-4-scaled.jpg",
   },
   {
-    title: "Nature Heals",
-    subtitle: "A path that guides you toward inner balance",
-    description: "Surrounded by nature, guided by experts.",
-    buttonText: "Explore",
+    title: "A Daily Ritual You’ll Love",
+    subtitle: "Consistency made effortless",
+    description:
+      "No pills. No water. No missed days. Just one delicious daily ritual.",
+    buttonText: "Explore the Collection",
     imageSrc: "/images/wellnessBG.jpg",
   },
 ];
@@ -56,7 +59,6 @@ const HeroSection = () => {
   return (
     <section className="hero-section-container">
 
-      {/* Background IMAGE instead of video */}
       <img
         key={slide.imageSrc}
         src={slide.imageSrc}
@@ -93,6 +95,18 @@ const HeroSection = () => {
           ></span>
         ))}
       </div>
+
+      {/* TRUST STRIP */}
+      <div className="trust-strip">
+        Clinically Inspired Formulations
+        <span> • </span>
+        Functional Botanicals
+        <span> • </span>
+        Irresistible Flavours
+        <span> • </span>
+        Family Wellness System
+      </div>
+
     </section>
   );
 };

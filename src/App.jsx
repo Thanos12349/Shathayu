@@ -70,29 +70,8 @@ function App() {
     <ScrollTop>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/testimonial' element={<Testimonial />} />
-        <Route path='/testimonial/video' element={<VideoTestimonial />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/stay' element={<Stay />} />
-        <Route path='/insur' element={<Insur />} />
-        <Route path='/PanchakarmaPage' element={<PanchakarmaPage />} />
-        <Route path='/ShirodharaPage' element={<ShirodharaPage />} />
-        <Route path='/KizhiPage' element={<KizhiPage />} />
-        <Route path='/Udvartana' element={<Udvartana />} />
-        <Route path='/PizhichilData' element={<PizhichilData />} />
-        <Route path='/Njavarakizhi' element={<Njavarakizhi />} />
-        <Route path='/NasyaPage' element={<NasyaPage />} />
-        <Route path='/NetraTarpanaPage' element={<NetraTarpanaPage />} />
-        <Route path='/TherapyPage' element={<TherapyPage therapyData={SwedanaData} />} />
-        <Route path='/DetoxPanchakarmaPage' element={<DetoxPanchakarmaPage />} />
-        <Route path='/PainManagementPage' element={<PainManagementPage />} />
-        <Route path='/WeightLossProgramPage' element={<WeightLossProgramPage />} />
-        <Route path='/RasayanaRejuvenationPage' element={<RasayanaRejuvenationPage />} />
-        <Route path='/WomensHormonalBalancePage' element={<WomensHormonalBalancePage />} />
-        <Route path='/HealingSpaces' element={<HealingSpaces />} />
-        <Route path='/SoulfulCuisine' element={<SoulfulCuisine />} />
-        <Route path='/BehindSeyraya' element={<BehindSeyraya />} />
+       
         
 
 

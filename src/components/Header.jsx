@@ -9,31 +9,8 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    {
-      name: "Wellness Package",
-      dropdown: [
-        { name: "PANCHAKARMA", href: "/PanchakarmaPage" },
-        // { name: "ABHYANGA ", href: "/testimonial" },
-        { name: "SHIRODHARA ", href: "/ShirodharaPage" },
-        { name: "UDVARTANA  ", href: "/Udvartana" },
-        { name: "POTLI MASSAGE", href: "/KizhiPage" },
-        { name:"Pizhichil",href:"/PizhichilData"},
-        { name: "NJAVARAKIZHI  ", href: "/Njavarakizhi" },
-        { name: "NASYA ", href: "/NasyaPage" },
-        { name: "NETRA TARPANA  ", href: "/NetraTarpanaPage" },
-        { name: "SWEDANA ", href: "/TherapyPage" },
-        { name: "detox & Panchakarma", href: "/DetoxPanchakarmaPage" },
-        // { name: "Stress Relief & Sleep", href: "/testimonial/video" },
-        {name:"Pain Management",href:"/PainManagementPage"},
-        { name: " Weight Loss & Metabolic Reset", href: "/WeightLossProgramPage" },
-        { name: "Rasayana", href: "/RasayanaRejuvenationPage" },
-        { name: "Women's Hormonal Balance", href: "/WomensHormonalBalancePage" },
-      ],
-    },
-    { name: "Healing Spaces", href: "/HealingSpaces" },
-    { name: "Soulful Cuisine", href: "/SoulfulCuisine" },
-    { name: "Behind Seyraya", href: "/BehindSeyraya" },
-    { name: "Packages", href: "/about" },    
+          
+    { name: "Home", href: "/" },    
     { name: "Contact Us", href: "/contact" },
   ];
 
