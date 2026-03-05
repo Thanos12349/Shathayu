@@ -86,12 +86,34 @@ const BiomeMethod = () => {
                         <h3>CORE BENEFITS</h3>
 
                         <div className="benefits-grid">
-                            <span>Radiant skin & stronger hair</span>
-                            <span>Calm mind & stress support</span>
-                            <span>Deep, restful sleep</span>
-                            <span>All-day clean energy</span>
-                            <span>Stronger immunity</span>
-                            <span>Healthy growth for kids</span>
+                            <div className="benefit-item">
+                                <img src="/images/bullet.png" alt="" />
+                                <span>Radiant skin & stronger hair</span>
+                            </div>
+                            <div className="benefit-item">
+                                <img src="/images/bullet.png" alt="" />
+                                <span>Calm mind & stress support</span>
+                            </div>
+
+                            <div className="benefit-item">
+                                <img src="/images/bullet.png" alt="" />
+                                <span>Deep, restful sleep</span>
+                            </div>
+
+                            <div className="benefit-item">
+                                <img src="/images/bullet.png" alt="" />
+                                <span>All-day clean energy</span>
+                            </div>
+
+                            <div className="benefit-item">
+                                <img src="/images/bullet.png" alt="" />
+                                <span>Stronger immunity</span>
+                            </div>
+
+                            <div className="benefit-item">
+                                <img src="/images/bullet.png" alt="" />
+                                <span>Healthy growth for kids</span>
+                            </div>
                         </div>
 
                         <p className="highlight-line">
@@ -105,17 +127,78 @@ const BiomeMethod = () => {
                 </div>
 
                 <div className="method-section1 fade-up">
-                    <h3>SCIENCE & INGREDIENT PHILOSOPHY</h3>
-                    <ul className="science-list">
-                        <li>Clinically studied vitamins & minerals</li>
-                        <li>Standardised herbal extracts</li>
-                        <li>Bioavailable nutrient formats</li>
-                        <li>Clean, carefully selected ingredients</li>
-                    </ul>
-                    <p className="section-note">
-                        No unnecessary fillers. No over-promises.
-                        Only research-driven nutrition designed for real, visible results.
-                    </p>
+                    <div className="grid-3">
+                        <div className="card">
+                            <h3>SCIENCE & INGREDIENT PHILOSOPHY</h3>
+                            <ul className="science-list">
+                                <li>Clinically studied vitamins & minerals</li>
+                                <li>Standardised herbal extracts</li>
+                                <li>Bioavailable nutrient formats</li>
+                                <li>Clean, carefully selected ingredients</li>
+                            </ul>
+                            <p className="section-note">
+                                No unnecessary fillers. No over-promises.
+                                Only research-driven nutrition designed for real, visible results.
+                            </p>
+
+                        </div>
+
+                        <div className="card">
+                            <div className="partner-content">
+                                <h3>Partner With BIOME+</h3>
+                                <p className="partner-sub">
+                                    Join our growing wellness network and bring premium nutrition
+                                    to your customers.
+                                </p>
+
+                                <div className="grid-2">
+                                    <ul>
+                                        <li>Bulk supply with low MOQs</li>
+                                        <li>Custom formulations</li>
+                                        <li>Private & white labelling</li>
+                                        <li>Premium packaging solutions</li>
+                                    </ul>
+
+                                    <ul>
+                                        <li>Retail & pharmacy partnerships</li>
+                                        <li>Wellness chains</li>
+                                        <li>Gyms & fitness centres</li>
+                                        <li>Global distributors</li>
+                                    </ul>
+                                </div>
+
+                                <div className="cta-row">
+                                    <button className="primary-btn">Become a Stockist</button>
+                                    <button className="outline-btn">Enquire for Wholesale</button>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <div className="card">
+                            <div className="conversion-left">
+                                <h3>Start Your BIOME+ Ritual Today</h3>
+
+                                <ul className="conversion-list">
+                                    <li>Better sleep</li>
+                                    <li>Stronger immunity</li>
+                                    <li>Natural glow</li>
+                                    <li>Calmer days</li>
+                                    <li>Healthier kids</li>
+                                    <li className="dumb">....</li>
+                                </ul>
+
+                                <div className="cta-row">
+                                    <button className="primary-btn">Shop Now</button>
+                                    <button className="outline-btn">
+                                        Build Your Wellness Routine
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
                 <div className="emotional-block fade-up">
@@ -136,7 +219,7 @@ const BiomeMethod = () => {
                     </p>
                 </div>
 
-                <div className="partner-section fade-up">
+                {/* <div className="partner-section fade-up">
                     <div className="partner-content">
                         <h3>Partner With BIOME+</h3>
                         <p className="partner-sub">
@@ -169,9 +252,9 @@ const BiomeMethod = () => {
                     <div className="partner-image">
                         <img src="/images/bio3.png" alt="Partner with Biome+" />
                     </div>
-                </div>
-                <div className="conversion-section fade-up">
-                     <div className="conversion-right">
+                </div> */}
+                {/* <div className="conversion-section fade-up">
+                    <div className="conversion-right">
                         <img src="/images/bio4.png" alt="Biome+ Wellness" />
                     </div>
 
@@ -194,9 +277,9 @@ const BiomeMethod = () => {
                         </div>
                     </div>
 
-                   
 
-                </div>
+
+                </div> */}
             </div>
 
         </section>

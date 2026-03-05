@@ -1,8 +1,8 @@
 .footer {
-  background: linear-gradient(135deg, #1b6535, #4bb24d);
-  color: #fff;
+  background: #F5F5DC;
+  color: #000000;
   padding: 60px 100px 20px;
-  border-radius: 80px 80px 0 0;
+  /* border-radius: 80px 80px 0 0; */
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
@@ -37,7 +37,7 @@
 .social-icons a {
   margin: 0 8px;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   transition: 0.3s ease;
 }
 

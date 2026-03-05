@@ -9,8 +9,8 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-          
-    { name: "Home", href: "/" },    
+
+    { name: "Home", href: "/" },
     { name: "Contact Us", href: "/contact" },
   ];
 
@@ -39,45 +39,44 @@ const Header = () => {
       <div className="navbar-container">
         <div className="navbar-flex-content">
           {/* Logo */}
-          <Link to="/" className="navbar-logo text-decoration-none">
+          {/* <Link to="/" className="navbar-logo text-decoration-none">
             <img className="logo-main" src="/images/bio_logo.png" alt="" />
-            
-          </Link>
+
+          </Link> */}
 
           {/* Desktop Navbar */}
-          <div className="navbar-links-desktop">
-            {navLinks.map((link, index) =>
-              link.dropdown ? (
-                <div key={index} className="dropdown">
-                  <button className="nav-link dropdown-toggle">
-                    {link.name}
-                  </button>
-                  <div className="dropdown-menu">
-                    {link.dropdown.map((sublink, i) => (
-                      <Link
-                        key={i}
-                        to={sublink.href}
-                        className={`dropdown-item ${
-                          location.pathname === sublink.href ? "active" : ""
-                        }`}
-                      >
-                        {sublink.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  key={index}
-                  to={link.href}
-                  className={`nav-link ${
-                    location.pathname === link.href ? "active" : ""
+          <div className="navbar-flex-content">
+
+            {/* Left Side - Home */}
+            <div className="nav-left">
+              <Link
+                to="/"
+                className={`nav-link ${location.pathname === "/" ? "active" : ""}`}
+              >
+                Home
+              </Link>
+            </div>
+
+            {/* Center - Logo */}
+            <div className="nav-center">
+              <Link to="/" className="navbar-logo text-decoration-none">
+                <img className="logo-main" src="/images/bio_logo.png" alt="logo" />
+              </Link>
+            </div>
+
+            {/* Right Side - Contact */}
+            <div className="nav-right">
+              <Link
+                to="/contact"
+                className={`nav-link ${location.pathname === "/contact" ? "active" : ""
                   }`}
-                >
-                  {link.name}
-                </Link>
-              )
-            )}
+              >
+                Contact Us
+              </Link>
+            </div>
+
+            {/* Mobile Hamburger */}
+
           </div>
 
 
@@ -137,9 +136,8 @@ const Header = () => {
                     <Link
                       key={i}
                       to={sublink.href}
-                      className={`mobile-dropdown-item ${
-                        location.pathname === sublink.href ? "active" : ""
-                      }`}
+                      className={`mobile-dropdown-item ${location.pathname === sublink.href ? "active" : ""
+                        }`}
                     >
                       {sublink.name}
                     </Link>
@@ -151,9 +149,8 @@ const Header = () => {
             <Link
               key={index}
               to={link.href}
-              className={`mobile-nav-link ${
-                location.pathname === link.href ? "active" : ""
-              }`}
+              className={`mobile-nav-link ${location.pathname === link.href ? "active" : ""
+                }`}
             >
               {link.name}
             </Link>

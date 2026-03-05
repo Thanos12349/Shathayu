@@ -4,17 +4,22 @@
     padding: 0px 40px 0px 0px;
     font-family: "Georgia", "Times New Roman", serif;
 
-    background-image: url("../images/03.png");
+    background-image:url("../images/bio_about.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-
+.center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .about-content1 {
-    max-width: 100%;
-    background-image: url("../images/5044561.jpg");
+    max-width: 50%;
+    background:rgb(245, 245, 220,0.7);
     background-size: cover;
     background-position: center;
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -29,7 +34,7 @@
 .about-content h2 {
     font-family: "Bell MT", "Playfair Display", serif;
     line-height: 1.6;
-    font-size: 2rem;
+    font-size: rem;
     font-weight: 700;
     margin-bottom: 1px;
 }
@@ -38,7 +43,7 @@
     font-family: "Bell MT", "Playfair Display", serif;
     line-height: 1.6;
     margin-bottom: 15px;
-    font-size: 0.90rem;
+    font-size: 1.2rem;
 }
 
 .aboutimg {

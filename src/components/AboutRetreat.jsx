@@ -6,7 +6,7 @@ const AboutRetreat = () => {
         <section className="about-retreat">
             <div className="about-content1">
                 <div className="about-content">
-                    <h2>About</h2>
+                    <h2 className="center">About</h2>
 
                     <p>
                         <strong>Wellness That Fits Real Life</strong>
@@ -38,11 +38,11 @@ const AboutRetreat = () => {
                     </p>
                 </div>
 
-                <img
+                {/* <img
                     className="aboutimg"
-                    src="images/bio4.png"
+                    src="images/bio_about.png"
                     alt="BIOME+ Wellness"
-                />
+                /> */}
             </div>
         </section>
     );

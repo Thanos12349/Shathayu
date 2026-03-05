@@ -8,7 +8,7 @@ const heroContent = [
     description:
       "Wellness that your body needs. A taste you’ll crave every single day.",
     buttonText: "Shop Gummies",
-    imageSrc: "/images/banner-1-scaled.jpg",
+    Image: "/images/bio_about.png",
   },
   {
     title: "Science-Backed Functional Gummies",
@@ -16,7 +16,7 @@ const heroContent = [
     description:
       "Stronger immunity • Deeper sleep • Radiant skin & hair • Calmer stress response • All-day natural energy • Healthy growing kids",
     buttonText: "Find Your Perfect Routine",
-    imageSrc: "/images/banner-4-scaled.jpg",
+    videoSrc: "/videos/HeroSection.MP4",
   },
   {
     title: "A Daily Ritual You’ll Love",
@@ -24,7 +24,7 @@ const heroContent = [
     description:
       "No pills. No water. No missed days. Just one delicious daily ritual.",
     buttonText: "Explore the Collection",
-    imageSrc: "/images/wellnessBG.jpg",
+    Image: "/images/bio_about.png",
   },
 ];
 
@@ -59,12 +59,16 @@ const HeroSection = () => {
   return (
     <section className="hero-section-container">
 
-      <img
-        key={slide.imageSrc}
-        src={slide.imageSrc}
-        alt={slide.title}
-        className="hero-image-background fade-video"
+      <video
+        key={slide.videoSrc}
+        className="hero-video-background fade-video"
+        src={slide.videoSrc}
+        autoPlay
+        muted
+        loop
+        playsInline
       />
+      <img src={slide.Image} className="hero-video-background" alt="Hersection image for BioME+" />
 
       <div className="hero-video-overlay"></div>
 

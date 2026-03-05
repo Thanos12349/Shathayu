@@ -8,11 +8,7 @@
     justify-content: center;
 }
 
-/* ⛔ Old (video) – remove or ignore
-.hero-video-background { ... }
-*/
 
-/* ✅ New (image background) */
 .hero-image-background {
     position: absolute;
     top: 0;
@@ -142,7 +138,35 @@
   text-transform: uppercase;
   color: #fff;
 }
+.hero-section-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.hero-video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 2;
+}
+
+.hero-content-wrapper {
+  position: relative;
+  z-index: 3;
+}
 @media (min-width: 768px) {
     .hero-title {
         font-size: 4.5rem; 
