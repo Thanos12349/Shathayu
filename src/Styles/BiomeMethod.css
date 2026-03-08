@@ -47,6 +47,7 @@
 
 .method-section1 {
     margin-bottom: 80px;
+    gap: 20px;
 }
 
 .method-section1 ul {
@@ -67,7 +68,7 @@
 }
 .flow-list {
    text-align: left;
-   list-style: none;
+   list-style: disc;
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
@@ -169,7 +170,8 @@
 }
 
 .benefits-grid span {
-    background: #f5f7fa;
+
+    /* background: #f5f7fa; */
     padding: 15px 20px;
     border-radius: 12px;
     font-weight: 500;
@@ -177,7 +179,7 @@
 }
 
 .benefits-grid span:hover {
-    background: #e8f0ff;
+    /* background: #e8f0ff; */
     transform: translateY(-5px);
 }
 
@@ -504,7 +506,7 @@
     .benefits-section,
     .partner-section,
     .conversion-section {
-        padding: 10px 12%;
+        padding: 10px 10%;
     }
 }
 

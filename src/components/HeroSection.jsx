@@ -4,9 +4,9 @@ import '../Styles/HeroSection.css';
 const heroContent = [
   {
     title: "The Future of Daily Nutrition",
-    subtitle: "In One Delicious Gummy",
+    subtitle: "Wellness your body needs.",
     description:
-      "Wellness that your body needs. A taste you’ll crave every single day.",
+      "Beyond Nutrition for Modern Lifestyles",
     buttonText: "Shop Gummies",
     Image: "/images/bio_about.png",
   },
@@ -85,9 +85,7 @@ const HeroSection = () => {
           {slide.description}
         </p>
 
-        <button className={`hero-cta-button ${lineVisibility.button ? 'is-visible' : ''}`}>
-          {slide.buttonText}
-        </button>
+     
       </div>
 
       <div className="hero-dots">
