@@ -4,13 +4,19 @@ import "../Styles/BiomeMethod.css";
 const BiomeMethod = () => {
     return (
         <section className="biome-method">
-            <div className="biome-container ">
+            <div className="biome-container1 ">
 
                 <div className="method-section">
                     <div className="method-content fade-up">
                         <h2>THE BIOME+ METHOD</h2>
                         <p className="method-flow">
-                            Habit → Taste → Consistency → Transformation
+                            <ul className="flow-list">
+                                <li>Habit</li>
+                                <li>Taste</li>
+                                <li>Consistency</li>
+                                <li>Transformation</li>
+                            </ul>
+
                         </p>
                         <p className="method-desc">
                             Our gummies are designed for high absorption, precise functional dosing,
@@ -27,7 +33,7 @@ const BiomeMethod = () => {
                     </div>
                 </div>
 
-                <div className="method-section1 fade-up">
+                <div className="biome-container method-section1 fade-up">
                     <h3>OUR FUNCTIONAL GUMMY SYSTEM</h3>
                     <p className="section-sub">Complete Nutrition for Every Body & Every Age</p>
 
@@ -58,23 +64,25 @@ const BiomeMethod = () => {
                                 <li>Stress Relief Gummies</li>
                             </ul>
                         </div>
-
-                        <div className="card">
-                            <h4>STRENGTH ENERGY VITALITY</h4>
-                            <ul>
-                                <li>Shilajit Gummies</li>
-                                <li>Moringa Gummies</li>
-                            </ul>
-                        </div>
-
-                        <div className="card">
-                            <h4>DIGITAL LIFESTYLE SUPPORT</h4>
-                            <ul>
-                                <li>Eye Care Gummies</li>
-                            </ul>
-                        </div>
-
+                    
                     </div>
+                      <div className="inBetween">
+                            <div className="card">
+                                <h4>STRENGTH ENERGY VITALITY</h4>
+                                <ul>
+                                    <li>Shilajit Gummies</li>
+                                    <li>Moringa Gummies</li>
+                                </ul>
+                            </div>
+
+                            <div className="card">
+                                <h4>DIGITAL LIFESTYLE SUPPORT</h4>
+                                <ul>
+                                    <li>Eye Care Gummies</li>
+                                </ul>
+                            </div>
+
+                        </div>
 
                     <p className="section-note">
                         All with a delicious taste that turns nutrition into a daily reward.
@@ -121,8 +129,8 @@ const BiomeMethod = () => {
                         </p>
                     </div>
 
-                    <div className="benefits-image py-4">
-                        <img src="/images/bio2.jpg" alt="Core Benefits" />
+                    <div className="benefits-image">
+                        <img src="/images/9.png" alt="Core Benefits" />
                     </div>
                 </div>
 
@@ -167,11 +175,11 @@ const BiomeMethod = () => {
                                     </ul>
                                 </div>
 
-                                <div className="cta-row">
+                                {/* <div className="cta-row">
                                     <button className="primary-btn">Become a Stockist</button>
                                     <button className="outline-btn">Enquire for Wholesale</button>
-                                </div>
-                                
+                                </div> */}
+
                             </div>
 
                         </div>
@@ -188,12 +196,12 @@ const BiomeMethod = () => {
                                     <li className="dumb">....</li>
                                 </ul>
 
-                                <div className="cta-row">
+                                {/* <div className="cta-row">
                                     <button className="primary-btn">Shop Now</button>
                                     <button className="outline-btn">
                                         Build Your Wellness Routine
                                     </button>
-                                </div>
+                                </div> */}
                             </div>
 
                         </div>
@@ -209,7 +217,7 @@ const BiomeMethod = () => {
                     </p>
                 </div>
 
-                <div className="method-section1 py-4 fade-up">
+                <div className="biome-container method-section1 py-4 fade-up">
                     <h3>FAMILY WELLNESS POSITIONING</h3>
                     <p>One brand for Women  Men  Kids  Professionals Fitness Lifestyles</p>
                     <p>

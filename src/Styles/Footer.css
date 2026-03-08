@@ -24,6 +24,11 @@
   margin: 8px 0;
   font-size: 14px;
 }
+.footer-emails a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
 
 .social-icons {
   margin-top: 20px;

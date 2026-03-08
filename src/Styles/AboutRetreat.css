@@ -1,178 +1,150 @@
+
+
 .about-retreat {
     position: relative;
     width: 100%;
-    padding: 0px 40px 0px 0px;
-    font-family: "Georgia", "Times New Roman", serif;
+    padding: 20px 40px;
+    font-family: "Georgia","Times New Roman",serif;
 
-    background-image:url("../images/bio_about.png");
+    background-image: url("../images/bio_about.png");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
+
 .center{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.about-content1 {
-    max-width: 50%;
-    background:rgb(245, 245, 220,0.7);
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 40px 80px;
-    color: #0e0d0d;
-    margin: 0 auto;
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 
-.about-content h2 {
-    font-family: "Bell MT", "Playfair Display", serif;
-    line-height: 1.6;
-    font-size: rem;
-    font-weight: 700;
-    margin-bottom: 1px;
+.about-content1{
+    width:100%;
+    max-width:850px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:20px 0px;
+    color:#0e0d0d;
+    margin-left:auto;
+    margin-right:15%;
 }
 
-.about-content p {
-    font-family: "Bell MT", "Playfair Display", serif;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
+.about-content h2{
+    font-family:"Bell MT","Playfair Display",serif;
+    line-height:1.5;
+    font-size:2.5rem;
+    font-weight:700;
+    margin-bottom:10px;
 }
 
-.aboutimg {
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    border: #fff;
-    border-radius: 80px 0px 80px 0px;
-    transition: all 0.3s ease;
+.about-content p{
+    font-family:"Bell MT","Playfair Display",serif;
+    line-height:2;
+    margin-bottom:15px;
+    font-size:1.5rem;
+    text-align:start;
 }
 
-.aboutimg:hover {
-    transform: scale(1.08);
+
+.legacy-section{
+    background:#fff;
+    color:#000;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:80px 60px;
+    gap:40px;
+    flex-wrap:wrap;
 }
 
-.legacy-section {
-    background: #fff;
-    color: #000;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 80px 80px;
-    flex-wrap: wrap;
+.legacy-left h3{
+    color:#1e5128;
+    font-weight:600;
+    margin-bottom:10px;
 }
 
-.legacy-left h3 {
-    color: #1e5128;
-    font-weight: 600;
-    margin-bottom: 10px;
+.legacy-left h1{
+    font-size:8rem;
+    background:linear-gradient(180deg,#4caf50,#1e5128);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:0;
 }
 
-.legacy-left h1 {
-    font-size: 8rem;
-    background: linear-gradient(180deg, #4caf50, #1e5128);
-    -webkit-text-fill-color: transparent;
-    margin: 0;
+.legacy-left p{
+    font-size:1.2rem;
+    font-weight:600;
+    color:#222;
 }
 
-.legacy-left p {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #222;
+.legacy-right{
+    max-width:600px;
+    font-size:1rem;
+    line-height:1.7;
 }
 
-.legacy-right {
-    max-width: 600px;
-    font-size: 0.95rem;
-    line-height: 1.6;
+
+@media (max-width:992px){
+
+.about-retreat{
+    padding:20px 30px;
+    background-attachment:scroll;
 }
 
-@media (max-width: 992px) {
-    .about-retreat {
-        padding: 50px 30px;
-        border-bottom-left-radius: 100px;
-        border-bottom-right-radius: 100px;
-    }
-
-    .legacy-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .legacy-left h1 {
-        font-size: 6rem;
-    }
-
-    .legacy-right {
-        margin-top: 20px;
-    }
-}
-@media (max-width: 992px) {
-
-    .about-retreat {
-        padding: 50px 30px;
-        background-attachment: scroll; /* Fix mobile lag */
-    }
-
-    .about-content1 {
-        flex-direction: column;
-        text-align: center;
-        padding: 50px 40px;
-        border-radius: 65px;
-    }
-
-    .legacy-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 40px;
-    }
-
-    .legacy-left h1 {
-        font-size: 5rem;
-    }
+.about-content1{
+    margin:auto;
+    max-width:600px;
+    padding:40px;
+    text-align:center;
 }
 
-/* ------------------ */
-/* MOBILE RESPONSIVE */
-/* ------------------ */
-@media (max-width: 576px) {
+.about-content p{
+    text-align:center;
+}
 
-    .about-retreat {
-        padding: 40px 20px;
-    }
+.legacy-section{
+    flex-direction:column;
+    text-align:center;
+}
 
-    .about-content1 {
-        padding: 40px 20px;
-    }
+.legacy-left h1{
+    font-size:5rem;
+}
 
-    .about-content h2 {
-        font-size: 1.6rem;
-    }
+}
 
-    .about-content p {
-        font-size: 0.9rem;
-    }
 
-    .aboutimg {
-        max-width: 250px;
-    }
 
-    .legacy-left h1 {
-        font-size: 3.5rem;
-    }
+@media (max-width:576px){
 
-    .legacy-left p {
-        font-size: 1rem;
-    }
+.about-retreat{
+    padding:20px 20px;
+}
 
-    .legacy-section {
-        padding: 40px 20px;
-    }
+.about-content1{
+    padding:10px 20px;
+}
+
+.about-content h2{
+    font-size:1.6rem;
+}
+
+.about-content p{
+    font-size:1.1rem;
+}
+
+.legacy-left h1{
+    font-size:3.5rem;
+}
+
+.legacy-left p{
+    font-size:1rem;
+}
+
+.legacy-section{
+    padding:40px 20px;
+}
+
 }

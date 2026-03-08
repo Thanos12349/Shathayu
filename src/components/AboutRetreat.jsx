@@ -4,7 +4,9 @@ import "../Styles/AboutRetreat.css";
 const AboutRetreat = () => {
     return (
         <section className="about-retreat">
+           
             <div className="about-content1">
+                
                 <div className="about-content">
                     <h2 className="center">About</h2>
 
