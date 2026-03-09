@@ -24,7 +24,7 @@ const BiomeMethod = () => {
                         </p>
                         <p className="highlight-line">
                             When wellness tastes good, you don’t skip it.
-                            When you don’t skip it — your body transforms.
+                            When you don’t skip it your body transforms.
                         </p>
                     </div>
 
@@ -110,7 +110,7 @@ const BiomeMethod = () => {
 
                             <div className="benefit-item">
                                 <img src="/images/bullet.png" alt="" />
-                                <span>All-day clean energy</span>
+                                <span>All day clean energy</span>
                             </div>
 
                             <div className="benefit-item">
@@ -145,8 +145,8 @@ const BiomeMethod = () => {
                                 <li>Clean, carefully selected ingredients</li>
                             </ul>
                             <p className="section-note">
-                                No unnecessary fillers. No over-promises.
-                                Only research-driven nutrition designed for real, visible results.
+                                No unnecessary fillers. No over promises.
+                                Only research driven nutrition designed for real, visible results.
                             </p>
 
                         </div>
@@ -210,7 +210,7 @@ const BiomeMethod = () => {
                 </div>
 
                 <div className="emotional-block fade-up">
-                    <h3>Your Sweetest Daily Act of Self-Care</h3>
+                    <h3>Your Sweetest Daily Act of Self Care</h3>
                     <p>
                         In the middle of a busy day, this becomes your pause.
                         A small, delicious reminder that you are taking care of your body, your mind, and your future.

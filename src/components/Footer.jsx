@@ -18,10 +18,10 @@ const Footer = () => {
 
           <div className="footer-emails">
             <p>
-              <FaEnvelope /> D2C: <a href="mailto:hello@biomeplus.com">hello@biomeplus.com</a>
+              <FaEnvelope />  <a href="mailto:info@biomeplus.co">info@biomeplus.co</a>
             </p>
             <p>
-              <FaEnvelope /> B2B & Export: <a href="mailto:business@biomeplus.com">business@biomeplus.com</a>
+              <FaEnvelope />  <a href="mailto:business@biomeplus.com">customercare@fdhsnet.com</a>
             </p>
           </div>
 

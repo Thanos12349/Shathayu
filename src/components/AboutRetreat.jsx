@@ -15,7 +15,7 @@ const AboutRetreat = () => {
                     </p>
 
                     <p>
-                        Modern lifestyles are busy, demanding, and always moving —
+                        Modern lifestyles are busy, demanding, and always moving
                         but your health cannot be optional.
                     </p>
 
@@ -30,12 +30,12 @@ const AboutRetreat = () => {
 
                     <p>
                         We combine nutritional science, powerful herbs,
-                        and crave-worthy flavours to turn wellness into
+                        and crave worthy flavours to turn wellness into
                         a habit you actually enjoy.
                     </p>
 
                     <p>
-                        Because true health is not built in 30 days —
+                        Because true health is not built in 30 days 
                         it is built every single day.
                     </p>
                 </div>
